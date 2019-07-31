@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<title>RubyShark</title>
+</head>
+<body>
+
+<body>
+	<header class="masthead">
+	<div class="container shading h-100">
+		<div class="d-flex flex-column h-100 align-items-center justify-content-center">
+			<div class="logo-container pb-3">
+				<img class="main-logo" src="img/logo.png" alt="logo">
+			</div>
+			<div class="request-button" data-toggle="modal" data-target="#formModal">
+				<span class="request-text">Request</span>
+				<svg class="request-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328 97.21">
+					<polyline points="38.56 97.2 0 70.25 71.14 0 288.36 0 328 26.96 256.86 97.2 38.56 97.2"
+						fill="#c30b00" /></svg>
+			</div>
+			<!-- Modal form-->
+			<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog full-height" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<div class="close" data-dismiss="modal" aria-label="Close">
+								<img class="modal-img-close" aria-hidden="true" src="./img/X.svg" alt="close">
+							</div>
+						</div>
+						<div class="modal-body d-flex justify-content-center">
+							<form action="/send-email" method="POST" class="d-flex flex-column align-content-center modal-form" id="send-form">
+								<label for="from" class="label-form-email">
+									<img class="icon icon-message" src="./img/icon-message.svg"
+									alt="convert icon">Your email:</label>
+								<div class="container-input">
+									<input name="from" id="form-email" type="email" class="input-form-email" required="true">
+									<img class="form-input-img-up decoration" src="./img/form-square-up.png"
+										alt="container form decoration">
+									<img class="form-input-img-down decoration" src="./img/form-square-down.png"
+										alt="container form decoration">
+								</div>
+								<label for="message" class="label-form-message">
+									<img class="icon icon-pen" src="./img/icon-pen.svg"
+									alt="pen icon">Your message:</label>
+								<div class="container-input">
+									<textarea cols="50" rows="10" class="textarea-form-message" name="message" id="form-message" required="true"></textarea>
+									<img class="form-textarea-img-up decoration" src="./img/form-square-up.png"
+										alt="container form decoration">
+									<img class="form-textarea-img-down decoration" src="./img/form-square-down.png"
+										alt="container form decoration">
+								</div>
+								<input type="submit" id="hide-submit-button">
+							</form>
+						</div>
+						<div class="modal-footer">
+							<div id="send-button" class="send-button">
+								<span class="send-button-text">Send</span>
+								<svg class="send-button-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328 97.21">
+									<polyline
+										points="38.56 97.2 0 70.25 71.14 0 288.36 0 328 26.96 256.86 97.2 38.56 97.2"
+										fill="#c30b00" /></svg>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+	<nav id="nav" class="navbar navbar-expand-lg sticky-top">
+	<div class="container">
+		<a href="#" class="navbar-brand"><img class="logo" src="img/logo-for-navbar.png" alt="logo"></a>
+		<div class="collapse navbar-collapse">
+			<ul class="navbar-nav ml-auto my-2 my-lg-0">
+				<li class="nav-item">
+					<a href="#" class="nav-link">Projects</a>
+					<svg class="menu-button-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328 97.21"><polyline points="38.56 97.2 0 70.25 71.14 0 288.36 0 328 26.96 256.86 97.2 38.56 97.2" fill="#c30b00"/></svg>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Contacts</a>
+					<svg class="menu-button-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328 97.21"><polyline points="38.56 97.2 0 70.25 71.14 0 288.36 0 328 26.96 256.86 97.2 38.56 97.2" fill="#c30b00"/></svg>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Class</a>
+					<svg class="menu-button-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328 97.21"><polyline points="38.56 97.2 0 70.25 71.14 0 288.36 0 328 26.96 256.86 97.2 38.56 97.2" fill="#c30b00"/></svg>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+	<main class="main">
+		<section class="video-examples">
+			<div class="container video-cards">
+				<h3 class="videos-title">Our video projects</h3>
+				<hr class="hr">
+				<div class="video-examples">
+					<div class="row row-reverse">
+						<div class="video-example col-md-6 col-sm-12" data-toggle="modal" data-target="#videoModal">
+							<img class="video-background" src="./img/background-video.jpg" alt="background video">
+							<img class="video-shadow" src="./img/shadow-video.png" alt="shadow video">
+							<img class="video-play" src="./img/play-icon.png" alt="play icon">
+							<!-- Modal video -->
+							<div class="modal fade" id="videoModal" tabindex="-1" role="dialog"
+								aria-labelledby="videoModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close close-video" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<iframe class="video" src="https://www.youtube.com/embed/3A_zJscyt48"
+												frameborder="0"
+												allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+												allowfullscreen></iframe>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="description col-md-6">
+							<h3 class="description-title">VIDEO #1</h3>
+							<p class="description-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+								cum optio,
+								pariatur perspiciatis id at nulla repellendus ullam! Eos ea a rerum provident et vitae
+								doloribus
+								cumque temporibus iure laborum.</p>
+						</div>
+					</div>
+					<div class="row row-reverse">
+						<div class="video-example col-md-6">
+							<img class="video-background" src="./img/background-video.jpg" alt="background video">
+							<img class="video-shadow" src="./img/shadow-video.png" alt="shadow video">
+							<img class="video-play" src="./img/play-icon.png" alt="play icon">
+						</div>
+						<div class="description col-md-6">
+							<h3 class="description-title">VIDEO #2</h3>
+							<p class="description-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+								cum optio,
+								pariatur perspiciatis id at nulla repellendus ullam! Eos ea a rerum provident et vitae
+								doloribus
+								cumque temporibus iure laborum.</p>
+						</div>
+					</div>
+					<div class="row row-reverse">
+						<div class="video-example col-md-6">
+							<img class="video-background" src="./img/background-video.jpg" alt="background video">
+							<img class="video-shadow" src="./img/shadow-video.png" alt="shadow video">
+							<img class="video-play" src="./img/play-icon.png" alt="play icon">
+						</div>
+						<div class="description col-md-6">
+							<h3 class="description-title">VIDEO #3</h3>
+							<p class="description-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+								cum optio,
+								pariatur perspiciatis id at nulla repellendus ullam! Eos ea a rerum provident et vitae
+								doloribus
+								cumque temporibus iure laborum.</p>
+						</div>
+					</div>
+					<div class="row row-reverse">
+						<div class="video-example col-md-6">
+							<img class="video-background" src="./img/background-video.jpg" alt="background video">
+							<img class="video-shadow" src="./img/shadow-video.png" alt="shadow video">
+							<img class="video-play" src="./img/play-icon.png" alt="play icon">
+						</div>
+						<div class="description col-md-6">
+							<h3 class="description-title">VIDEO #4</h3>
+							<p class="description-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+								cum optio,
+								pariatur perspiciatis id at nulla repellendus ullam! Eos ea a rerum provident et vitae
+								doloribus
+								cumque temporibus iure laborum.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+		<footer class="footer d-flex flex-row">
+		<div class="container d-flex justify-content-end align-items-center">
+			<div class="col-md-3">
+				<img class="footer-brands-logo" src="../img/facebook-brands.svg" alt="facebook-brands-logo">
+				<img class="footer-brands-logo" src="../img/instagram-brands.svg" alt="instagram-brands-logo">
+				<img class="footer-brands-logo" src="../img/vk-brands.svg" alt="vk-brands-logo">
+			</div>
+		</div>
+	</footer>
+	<script src="js/libs.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

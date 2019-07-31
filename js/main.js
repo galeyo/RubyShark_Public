@@ -1,0 +1,2 @@
+window.onscroll=function(){stickyNav()};var header=document.getElementById("nav"),sticky=header.offsetTop;function stickyNav(){window.pageYOffset>sticky?header.classList.add("sticky"):header.classList.remove("sticky")}var sendButton=document.getElementById("send-button"),hideSubmitButton=document.getElementById("hide-submit-button");sendButton.addEventListener("click",function(){hideSubmitButton.click()});
+//# sourceMappingURL=main.js.map
