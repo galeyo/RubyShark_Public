@@ -70,6 +70,11 @@
 					</div>
 				</div>
 			</div>
+			<div class="request-link hide" id="request" data-toggle="modal" data-target="#formModal">
+				<svg height="100" width="100">
+					<circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+				</svg>
+			</div>
 		</div>
 	</div>
 </header>
@@ -80,15 +85,15 @@
 		<div class="collapse navbar-collapse">
 			<ul class="navbar-nav ml-auto my-2 my-lg-0">
 				<li class="nav-item">
-					<a href="#" class="nav-link">Projects</a>
+					<a href="#video-examples" class="nav-link">Projects</a>
 					<svg class="menu-button-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328 97.21"><polyline points="38.56 97.2 0 70.25 71.14 0 288.36 0 328 26.96 256.86 97.2 38.56 97.2" fill="#c30b00"/></svg>
 				</li>
 				<li class="nav-item">
-					<a href="#" class="nav-link">Contacts</a>
+					<a href="#gallery" class="nav-link">Gallery</a>
 					<svg class="menu-button-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328 97.21"><polyline points="38.56 97.2 0 70.25 71.14 0 288.36 0 328 26.96 256.86 97.2 38.56 97.2" fill="#c30b00"/></svg>
 				</li>
 				<li class="nav-item">
-					<a href="#" class="nav-link">Class</a>
+					<a href="#contacts" class="nav-link">Contacts</a>
 					<svg class="menu-button-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328 97.21"><polyline points="38.56 97.2 0 70.25 71.14 0 288.36 0 328 26.96 256.86 97.2 38.56 97.2" fill="#c30b00"/></svg>
 				</li>
 			</ul>
@@ -97,93 +102,168 @@
 </nav>
 
 	<main class="main">
-		<section class="video-examples">
-			<div class="container video-cards">
-				<h3 class="videos-title">Our video projects</h3>
-				<hr class="hr">
-				<div class="video-examples">
-					<div class="row row-reverse">
-						<div class="video-example col-md-6 col-sm-12" data-toggle="modal" data-target="#videoModal" data-src="https://www.youtube.com/embed/3A_zJscyt48">
-							<img class="video-background" src="./img/background-video.jpg" alt="background video">
-							<img class="video-shadow" src="./img/shadow-video.png" alt="shadow video">
-							<img class="video-play" src="./img/play-icon.png" alt="play icon">
-							<!-- Modal video -->
-							<div class="modal fade" id="videoModal" tabindex="-1" role="dialog"
-								aria-labelledby="videoModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-xl modal-dialog-centered" role="document">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close close-video" data-dismiss="modal" aria-label="Close">
-												<span aria-hidden="true">&times;</span>
-											</button>
-										</div>
-										<div class="modal-body">
-											<iframe class="video"
-												frameborder="0"
-												allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-												allowfullscreen></iframe>
-										</div>
-									</div>
-								</div>
+		<div class="container">
+			<section id="video-examples" class="video-examples">
+	<div class="video-cards">
+		<div class="video-examples">
+			<div class="row row-reverse">
+				<div class="col-md-6 col-sm-12" data-toggle="modal" data-target="#videoModal"
+					data-src="https://www.youtube.com/embed/3A_zJscyt48">
+					<div class="video-example">
+						<img class="video-background" src="./img/background-video.jpg" alt="background video">
+						<img class="video-shadow" src="./img/shadow-video.png" alt="shadow video">
+						<img class="video-play" src="./img/icon-play.png" alt="play icon">
+					</div>
+					<!-- Modal video -->
+					<div class="modal fade" id="videoModal" tabindex="-1" role="dialog"
+						aria-labelledby="videoModalLabel" aria-hidden="true">
+						<div class="close close-video">
+							<svg class="modal-img-close" data-dismiss="modal" aria-label="Close" version="1.1"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.9 21.9"
+								xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 21.9 21.9">
+								<path
+									d="M14.1,11.3c-0.2-0.2-0.2-0.5,0-0.7l7.5-7.5c0.2-0.2,0.3-0.5,0.3-0.7s-0.1-0.5-0.3-0.7l-1.4-1.4C20,0.1,19.7,0,19.5,0  c-0.3,0-0.5,0.1-0.7,0.3l-7.5,7.5c-0.2,0.2-0.5,0.2-0.7,0L3.1,0.3C2.9,0.1,2.6,0,2.4,0S1.9,0.1,1.7,0.3L0.3,1.7C0.1,1.9,0,2.2,0,2.4  s0.1,0.5,0.3,0.7l7.5,7.5c0.2,0.2,0.2,0.5,0,0.7l-7.5,7.5C0.1,19,0,19.3,0,19.5s0.1,0.5,0.3,0.7l1.4,1.4c0.2,0.2,0.5,0.3,0.7,0.3  s0.5-0.1,0.7-0.3l7.5-7.5c0.2-0.2,0.5-0.2,0.7,0l7.5,7.5c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3l1.4-1.4c0.2-0.2,0.3-0.5,0.3-0.7  s-0.1-0.5-0.3-0.7L14.1,11.3z" />
+							</svg>
+						</div>
+						<div class="modal-dialog modal-xl full-height" role="document">
+							<div class="modal-content bg-transparent">
+								<iframe class="video" frameborder="0"
+									allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen></iframe>
 							</div>
-						</div>
-						<div class="description col-md-6">
-							<h3 class="description-title">VIDEO #1</h3>
-							<p class="description-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
-								cum optio,
-								pariatur perspiciatis id at nulla repellendus ullam! Eos ea a rerum provident et vitae
-								doloribus
-								cumque temporibus iure laborum.</p>
-						</div>
-					</div>
-					<div class="row row-reverse">
-						<div class="video-example col-md-6">
-							<img class="video-background" src="./img/background-video.jpg" alt="background video">
-							<img class="video-shadow" src="./img/shadow-video.png" alt="shadow video">
-							<img class="video-play" src="./img/play-icon.png" alt="play icon">
-						</div>
-						<div class="description col-md-6">
-							<h3 class="description-title">VIDEO #2</h3>
-							<p class="description-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
-								cum optio,
-								pariatur perspiciatis id at nulla repellendus ullam! Eos ea a rerum provident et vitae
-								doloribus
-								cumque temporibus iure laborum.</p>
-						</div>
-					</div>
-					<div class="row row-reverse">
-						<div class="video-example col-md-6">
-							<img class="video-background" src="./img/background-video.jpg" alt="background video">
-							<img class="video-shadow" src="./img/shadow-video.png" alt="shadow video">
-							<img class="video-play" src="./img/play-icon.png" alt="play icon">
-						</div>
-						<div class="description col-md-6">
-							<h3 class="description-title">VIDEO #3</h3>
-							<p class="description-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
-								cum optio,
-								pariatur perspiciatis id at nulla repellendus ullam! Eos ea a rerum provident et vitae
-								doloribus
-								cumque temporibus iure laborum.</p>
-						</div>
-					</div>
-					<div class="row row-reverse">
-						<div class="video-example col-md-6">
-							<img class="video-background" src="./img/background-video.jpg" alt="background video">
-							<img class="video-shadow" src="./img/shadow-video.png" alt="shadow video">
-							<img class="video-play" src="./img/play-icon.png" alt="play icon">
-						</div>
-						<div class="description col-md-6">
-							<h3 class="description-title">VIDEO #4</h3>
-							<p class="description-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
-								cum optio,
-								pariatur perspiciatis id at nulla repellendus ullam! Eos ea a rerum provident et vitae
-								doloribus
-								cumque temporibus iure laborum.</p>
 						</div>
 					</div>
 				</div>
+				<div class="description col-md-6">
+					<h3 class="description-title">VIDEO #1</h3>
+					<p class="description-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+						cum optio,
+						pariatur perspiciatis id at nulla repellendus ullam! Eos ea a rerum provident et vitae
+						doloribus
+						cumque temporibus iure laborum.</p>
+				</div>
 			</div>
-		</section>
+			<div class="row row-reverse">
+				<div class="video-example col-md-6 col-sm-12" data-toggle="modal" data-target="#videoModal"
+					data-src="https://www.youtube.com/embed/kXwSK9h_eaQ">
+					<div class="video-example">
+						<img class="video-background" src="./img/background-video.jpg" alt="background video">
+						<img class="video-shadow" src="./img/shadow-video.png" alt="shadow video">
+						<img class="video-play" src="./img/icon-play.png" alt="play icon">
+					</div>
+				</div>
+				<div class="description col-md-6">
+					<h3 class="description-title">VIDEO #2</h3>
+					<p class="description-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+						cum optio,
+						pariatur perspiciatis id at nulla repellendus ullam! Eos ea a rerum provident et vitae
+						doloribus
+						cumque temporibus iure laborum.</p>
+				</div>
+			</div>
+			<div class="row row-reverse">
+				<div class="video-example col-md-6 col-sm-12" data-toggle="modal" data-target="#videoModal"
+					data-src="https://www.youtube.com/embed/5EpxnDm_Vd0">
+					<div class="video-example">
+						<img class="video-background" src="./img/background-video.jpg" alt="background video">
+						<img class="video-shadow" src="./img/shadow-video.png" alt="shadow video">
+						<img class="video-play" src="./img/icon-play.png" alt="play icon">
+					</div>
+				</div>
+				<div class="description col-md-6">
+					<h3 class="description-title">VIDEO #3</h3>
+					<p class="description-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+						cum optio,
+						pariatur perspiciatis id at nulla repellendus ullam! Eos ea a rerum provident et vitae
+						doloribus
+						cumque temporibus iure laborum.</p>
+				</div>
+			</div>
+			<div class="row row-reverse">
+				<div class="video-example col-md-6 col-sm-12" data-toggle="modal" data-target="#videoModal"
+					data-src="https://www.youtube.com/embed/ajPPkddPBNk">
+					<div class="video-example">
+						<img class="video-background" src="./img/background-video.jpg" alt="background video">
+						<img class="video-shadow" src="./img/shadow-video.png" alt="shadow video">
+						<img class="video-play" src="./img/icon-play.png" alt="play icon">
+					</div>
+				</div>
+				<div class="description col-md-6">
+					<h3 class="description-title">VIDEO #4</h3>
+					<p class="description-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+						cum optio,
+						pariatur perspiciatis id at nulla repellendus ullam! Eos ea a rerum provident et vitae
+						doloribus
+						cumque temporibus iure laborum.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+			<section id="gallery" class="gallery">
+	<h3 class="gallery-title">gallery</h3>
+	<div class="row">
+		<div class="parent-sample">
+			<div class="photo-container">
+				<div class="gallery-roundup">
+					<div class="photo stage">
+						<img class="image" src="./img/pic-1.jpg" />
+					</div>
+					<div class="photo th1">
+						<img class="image" src="./img/pic-2.jpg" />
+					</div>
+					<div class="photo th2">
+						<img class="image" src="./img/pic-3.jpg" />
+					</div>
+					<div class="photo th3">
+						<img class="image" src="./img/pic-4.jpg" />
+					</div>
+					<div class="photo th4">
+						<img class="image" src="./img/pic-5.jpg" />
+					</div>
+					<div class="photo th5">
+						<img class="image" src="./img/pic-6.jpg" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+			<section id="contacts" class="contacts">
+	<div class="contact-cards">
+		<h3 class="contact-title">Contacts</h3>
+		<div class="contacts row">
+			<ul class="contacts-list col-md-6 col-sm-12">
+				<li class="contacts-element">
+					<img src="./img/icon-message-white.svg" alt="message icon" class="message-icon d-inline-block icon">
+					<a href="mailto:libofinspiration@gmail.com" class="contacts-link">libofinspiration@gmail.com</a>
+				</li>
+				<li class="contacts-element">
+					<img src="./img/icon-instagram.svg" alt="instagram icon" class="instagram-icon d-inline-block icon">
+					<a href="#" class="contacts-link">@_ruby_shark_</a>
+				</li>
+				<li class="contacts-element">
+					<img src="./img/icon-phone.svg" alt="phone icon" class="phone-icon d-inline-block icon">
+					<a href="tel:+420774147292" class="contacts-link">+ 420 774 147 292</a>
+				</li>
+				<li class="contacts-element">
+					<img src="./img/icon-pointer.svg" alt="pointer icon" class="pointer-icon d-inline-block icon">
+					<a href="https://goo.gl/maps/SeMuK5nDqKAG1E8S6" class="contacts-link">zitomirska 599/38</a>
+				</li>
+			</ul>
+			<div class="mapouter col-md-6 col-sm-12">
+				<div class="gmap_canvas">
+					<iframe width="550" height="500" id="gmap_canvas"
+						src="https://maps.google.com/maps?q=%C5%BDitom%C3%ADrsk%C3%A1%20599%2F38&t=&z=11&ie=UTF8&iwloc=&output=embed"
+						frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+		</div>
 	</main>
 		<footer class="footer d-flex flex-row">
 		<div class="container d-flex justify-content-end align-items-center">
