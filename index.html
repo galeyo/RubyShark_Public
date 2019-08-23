@@ -26,8 +26,8 @@
 			<!-- Modal form-->
 			<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel"
 				aria-hidden="true">
-				<div class="modal-dialog full-height" role="document">
-					<div class="modal-content">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content full-height">
 						<div class="modal-header">
 							<div class="close" data-dismiss="modal" aria-label="Close">
 								<img class="modal-img-close" aria-hidden="true" src="./img/X.svg" alt="close">
@@ -71,34 +71,46 @@
 				</div>
 			</div>
 			<div class="request-link hide" id="request" data-toggle="modal" data-target="#formModal">
-				<svg height="100" width="100">
-					<circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
-				</svg>
+				<div class="request-link-container">
+					<div class="request-link-text">R</div>
+					<img src="./img/icon-request.svg" alt="request button" class="request-link-img">
+				</div>
 			</div>
 		</div>
 	</div>
 </header>
 
 	<nav id="nav" class="navbar navbar-expand-lg sticky-top">
-	<div class="container">
-		<a href="#" class="navbar-brand"><img class="logo" src="img/logo-for-navbar.png" alt="logo"></a>
-		<div class="collapse navbar-collapse">
-			<ul class="navbar-nav ml-auto my-2 my-lg-0">
-				<li class="nav-item">
-					<a href="#video-examples" class="nav-link">Projects</a>
-					<svg class="menu-button-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328 97.21"><polyline points="38.56 97.2 0 70.25 71.14 0 288.36 0 328 26.96 256.86 97.2 38.56 97.2" fill="#c30b00"/></svg>
-				</li>
-				<li class="nav-item">
-					<a href="#gallery" class="nav-link">Gallery</a>
-					<svg class="menu-button-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328 97.21"><polyline points="38.56 97.2 0 70.25 71.14 0 288.36 0 328 26.96 256.86 97.2 38.56 97.2" fill="#c30b00"/></svg>
-				</li>
-				<li class="nav-item">
-					<a href="#contacts" class="nav-link">Contacts</a>
-					<svg class="menu-button-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328 97.21"><polyline points="38.56 97.2 0 70.25 71.14 0 288.36 0 328 26.96 256.86 97.2 38.56 97.2" fill="#c30b00"/></svg>
-				</li>
-			</ul>
-		</div>
+	<div class="container d-flex justify-content-between">
+	<a href="#" class="navbar-brand"><img class="logo" src="img/logo-for-navbar.png" alt="logo"></a>
+	<div class="empty"></div>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+		aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<img class="navbar-toggler-icon" src="./img/icon-menu.svg" alt="menu icon"></img>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav ml-auto my-2 my-lg-0">
+			<li class="nav-item m-auto">
+				<a href="#video-examples" class="nav-link">Projects</a>
+				<svg class="menu-button-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328 97.21">
+					<polyline points="38.56 97.2 0 70.25 71.14 0 288.36 0 328 26.96 256.86 97.2 38.56 97.2"
+						fill="#c30b00" /></svg>
+			</li>
+			<li class="nav-item m-auto">
+				<a href="#gallery" class="nav-link">Gallery</a>
+				<svg class="menu-button-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328 97.21">
+					<polyline points="38.56 97.2 0 70.25 71.14 0 288.36 0 328 26.96 256.86 97.2 38.56 97.2"
+						fill="#c30b00" /></svg>
+			</li>
+			<li class="nav-item m-auto">
+				<a href="#contacts" class="nav-link">Contacts</a>
+				<svg class="menu-button-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328 97.21">
+					<polyline points="38.56 97.2 0 70.25 71.14 0 288.36 0 328 26.96 256.86 97.2 38.56 97.2"
+						fill="#c30b00" /></svg>
+			</li>
+		</ul>
 	</div>
+</div>
 </nav>
 
 	<main class="main">
@@ -106,30 +118,32 @@
 			<section id="video-examples" class="video-examples">
 	<div class="video-cards">
 		<div class="video-examples">
-			<div class="row row-reverse">
+			<div class="row row-reverse mb-5">
 				<div class="col-md-6 col-sm-12" data-toggle="modal" data-target="#videoModal"
 					data-src="https://www.youtube.com/embed/3A_zJscyt48">
 					<div class="video-example">
-						<img class="video-background" src="./img/background-video.jpg" alt="background video">
+						<img class="video-background" src="./img/background-video.png" alt="background video">
 						<img class="video-shadow" src="./img/shadow-video.png" alt="shadow video">
 						<img class="video-play" src="./img/icon-play.png" alt="play icon">
 					</div>
 					<!-- Modal video -->
 					<div class="modal fade" id="videoModal" tabindex="-1" role="dialog"
 						aria-labelledby="videoModalLabel" aria-hidden="true">
-						<div class="close close-video">
-							<svg class="modal-img-close" data-dismiss="modal" aria-label="Close" version="1.1"
-								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.9 21.9"
-								xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 21.9 21.9">
-								<path
-									d="M14.1,11.3c-0.2-0.2-0.2-0.5,0-0.7l7.5-7.5c0.2-0.2,0.3-0.5,0.3-0.7s-0.1-0.5-0.3-0.7l-1.4-1.4C20,0.1,19.7,0,19.5,0  c-0.3,0-0.5,0.1-0.7,0.3l-7.5,7.5c-0.2,0.2-0.5,0.2-0.7,0L3.1,0.3C2.9,0.1,2.6,0,2.4,0S1.9,0.1,1.7,0.3L0.3,1.7C0.1,1.9,0,2.2,0,2.4  s0.1,0.5,0.3,0.7l7.5,7.5c0.2,0.2,0.2,0.5,0,0.7l-7.5,7.5C0.1,19,0,19.3,0,19.5s0.1,0.5,0.3,0.7l1.4,1.4c0.2,0.2,0.5,0.3,0.7,0.3  s0.5-0.1,0.7-0.3l7.5-7.5c0.2-0.2,0.5-0.2,0.7,0l7.5,7.5c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3l1.4-1.4c0.2-0.2,0.3-0.5,0.3-0.7  s-0.1-0.5-0.3-0.7L14.1,11.3z" />
-							</svg>
-						</div>
-						<div class="modal-dialog modal-xl full-height" role="document">
-							<div class="modal-content bg-transparent">
-								<iframe class="video" frameborder="0"
-									allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-									allowfullscreen></iframe>
+						<div class="d-flex vh-100 flex-column justify-content-center">
+							<div class="close close-video">
+								<svg class="modal-img-close" data-dismiss="modal" aria-label="Close" version="1.1"
+									xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.9 21.9"
+									xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 21.9 21.9">
+									<path
+										d="M14.1,11.3c-0.2-0.2-0.2-0.5,0-0.7l7.5-7.5c0.2-0.2,0.3-0.5,0.3-0.7s-0.1-0.5-0.3-0.7l-1.4-1.4C20,0.1,19.7,0,19.5,0  c-0.3,0-0.5,0.1-0.7,0.3l-7.5,7.5c-0.2,0.2-0.5,0.2-0.7,0L3.1,0.3C2.9,0.1,2.6,0,2.4,0S1.9,0.1,1.7,0.3L0.3,1.7C0.1,1.9,0,2.2,0,2.4  s0.1,0.5,0.3,0.7l7.5,7.5c0.2,0.2,0.2,0.5,0,0.7l-7.5,7.5C0.1,19,0,19.3,0,19.5s0.1,0.5,0.3,0.7l1.4,1.4c0.2,0.2,0.5,0.3,0.7,0.3  s0.5-0.1,0.7-0.3l7.5-7.5c0.2-0.2,0.5-0.2,0.7,0l7.5,7.5c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3l1.4-1.4c0.2-0.2,0.3-0.5,0.3-0.7  s-0.1-0.5-0.3-0.7L14.1,11.3z" />
+								</svg>
+							</div>
+							<div class="modal-dialog modal-xl" role="document">
+								<div class="modal-content bg-transparent">
+									<iframe class="video" frameborder="0"
+										allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen></iframe>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -143,11 +157,11 @@
 						cumque temporibus iure laborum.</p>
 				</div>
 			</div>
-			<div class="row row-reverse">
-				<div class="video-example col-md-6 col-sm-12" data-toggle="modal" data-target="#videoModal"
+			<div class="row row-reverse mb-5">
+				<div class="col-md-6 col-sm-12" data-toggle="modal" data-target="#videoModal"
 					data-src="https://www.youtube.com/embed/kXwSK9h_eaQ">
 					<div class="video-example">
-						<img class="video-background" src="./img/background-video.jpg" alt="background video">
+						<img class="video-background" src="./img/background-video.png" alt="background video">
 						<img class="video-shadow" src="./img/shadow-video.png" alt="shadow video">
 						<img class="video-play" src="./img/icon-play.png" alt="play icon">
 					</div>
@@ -161,11 +175,11 @@
 						cumque temporibus iure laborum.</p>
 				</div>
 			</div>
-			<div class="row row-reverse">
-				<div class="video-example col-md-6 col-sm-12" data-toggle="modal" data-target="#videoModal"
+			<div class="row row-reverse mb-5">
+				<div class="col-md-6 col-sm-12" data-toggle="modal" data-target="#videoModal"
 					data-src="https://www.youtube.com/embed/5EpxnDm_Vd0">
 					<div class="video-example">
-						<img class="video-background" src="./img/background-video.jpg" alt="background video">
+						<img class="video-background" src="./img/background-video.png" alt="background video">
 						<img class="video-shadow" src="./img/shadow-video.png" alt="shadow video">
 						<img class="video-play" src="./img/icon-play.png" alt="play icon">
 					</div>
@@ -179,11 +193,11 @@
 						cumque temporibus iure laborum.</p>
 				</div>
 			</div>
-			<div class="row row-reverse">
-				<div class="video-example col-md-6 col-sm-12" data-toggle="modal" data-target="#videoModal"
+			<div class="row row-reverse mb-5">
+				<div class="col-md-6 col-sm-12" data-toggle="modal" data-target="#videoModal"
 					data-src="https://www.youtube.com/embed/ajPPkddPBNk">
 					<div class="video-example">
-						<img class="video-background" src="./img/background-video.jpg" alt="background video">
+						<img class="video-background" src="./img/background-video.png" alt="background video">
 						<img class="video-shadow" src="./img/shadow-video.png" alt="shadow video">
 						<img class="video-play" src="./img/icon-play.png" alt="play icon">
 					</div>
@@ -236,25 +250,25 @@
 		<div class="contacts row">
 			<ul class="contacts-list col-md-6 col-sm-12">
 				<li class="contacts-element">
-					<img src="./img/icon-message-white.svg" alt="message icon" class="message-icon d-inline-block icon">
+					<img src="./img/icon-message-white.svg" alt="message icon" class="message-icon icon">
 					<a href="mailto:libofinspiration@gmail.com" class="contacts-link">libofinspiration@gmail.com</a>
 				</li>
 				<li class="contacts-element">
-					<img src="./img/icon-instagram.svg" alt="instagram icon" class="instagram-icon d-inline-block icon">
+					<img src="./img/icon-instagram.svg" alt="instagram icon" class="instagram-icon icon">
 					<a href="#" class="contacts-link">@_ruby_shark_</a>
 				</li>
 				<li class="contacts-element">
-					<img src="./img/icon-phone.svg" alt="phone icon" class="phone-icon d-inline-block icon">
+					<img src="./img/icon-phone.svg" alt="phone icon" class="phone-icon icon">
 					<a href="tel:+420774147292" class="contacts-link">+ 420 774 147 292</a>
 				</li>
 				<li class="contacts-element">
-					<img src="./img/icon-pointer.svg" alt="pointer icon" class="pointer-icon d-inline-block icon">
+					<img src="./img/icon-pointer.svg" alt="pointer icon" class="pointer-icon icon">
 					<a href="https://goo.gl/maps/SeMuK5nDqKAG1E8S6" class="contacts-link">zitomirska 599/38</a>
 				</li>
 			</ul>
-			<div class="mapouter col-md-6 col-sm-12">
+			<div class="mapouter col-md-6 col-sm-12 d-flex justify-content-center">
 				<div class="gmap_canvas">
-					<iframe width="550" height="500" id="gmap_canvas"
+					<iframe id="gmap_canvas"
 						src="https://maps.google.com/maps?q=%C5%BDitom%C3%ADrsk%C3%A1%20599%2F38&t=&z=11&ie=UTF8&iwloc=&output=embed"
 						frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 				</div>
