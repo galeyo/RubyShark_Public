@@ -70,12 +70,6 @@
 					</div>
 				</div>
 			</div>
-			<div class="request-link hide" id="request" data-toggle="modal" data-target="#formModal">
-				<div class="request-link-container">
-					<div class="request-link-text">R</div>
-					<img src="./img/icon-request.svg" alt="request button" class="request-link-img">
-				</div>
-			</div>
 		</div>
 	</div>
 </header>
@@ -114,6 +108,12 @@
 </nav>
 
 	<main class="main">
+		<div class="request-link hide" id="request" data-toggle="modal" data-target="#formModal">
+			<div class="request-link-container">
+				<div class="request-link-text">R</div>
+				<img src="./img/icon-request.svg" alt="request button" class="request-link-img">
+			</div>
+		</div>
 		<div class="container">
 			<section id="video-examples" class="video-examples">
 	<div class="video-cards">
@@ -124,7 +124,7 @@
 					<div class="video-example">
 						<img class="video-background" src="./img/background-video.png" alt="background video">
 						<img class="video-shadow" src="./img/shadow-video.png" alt="shadow video">
-						<img class="video-play" src="./img/icon-play.png" alt="play icon">
+						<img class="video-play" src="./img/icon-play.svg" alt="play icon">
 					</div>
 					<!-- Modal video -->
 					<div class="modal fade" id="videoModal" tabindex="-1" role="dialog"
@@ -163,7 +163,7 @@
 					<div class="video-example">
 						<img class="video-background" src="./img/background-video.png" alt="background video">
 						<img class="video-shadow" src="./img/shadow-video.png" alt="shadow video">
-						<img class="video-play" src="./img/icon-play.png" alt="play icon">
+						<img class="video-play" src="./img/icon-play.svg" alt="play icon">
 					</div>
 				</div>
 				<div class="description col-md-6">
@@ -181,7 +181,7 @@
 					<div class="video-example">
 						<img class="video-background" src="./img/background-video.png" alt="background video">
 						<img class="video-shadow" src="./img/shadow-video.png" alt="shadow video">
-						<img class="video-play" src="./img/icon-play.png" alt="play icon">
+						<img class="video-play" src="./img/icon-play.svg" alt="play icon">
 					</div>
 				</div>
 				<div class="description col-md-6">
@@ -199,7 +199,7 @@
 					<div class="video-example">
 						<img class="video-background" src="./img/background-video.png" alt="background video">
 						<img class="video-shadow" src="./img/shadow-video.png" alt="shadow video">
-						<img class="video-play" src="./img/icon-play.png" alt="play icon">
+						<img class="video-play" src="./img/icon-play.svg" alt="play icon">
 					</div>
 				</div>
 				<div class="description col-md-6">
@@ -255,7 +255,7 @@
 				</li>
 				<li class="contacts-element">
 					<img src="./img/icon-instagram.svg" alt="instagram icon" class="instagram-icon icon">
-					<a href="#" class="contacts-link">@_ruby_shark_</a>
+					<a href="https://www.instagram.com/_ruby_shark_/" class="contacts-link">@_ruby_shark_</a>
 				</li>
 				<li class="contacts-element">
 					<img src="./img/icon-phone.svg" alt="phone icon" class="phone-icon icon">
@@ -279,16 +279,40 @@
 
 		</div>
 	</main>
-		<footer class="footer d-flex flex-row">
-		<div class="container d-flex justify-content-end align-items-center">
-			<div class="col-md-3">
-				<img class="footer-brands-logo" src="./img/facebook-brands.svg" alt="facebook-brands-logo">
-				<img class="footer-brands-logo" src="./img/instagram-brands.svg" alt="instagram-brands-logo">
-				<img class="footer-brands-logo" src="./img/vk-brands.svg" alt="vk-brands-logo">
-			</div>
+		<footer class="footer d-flex" id="footer">
+		<div class="container d-flex align-items-center justify-content-end">
+			<ul class="footer-list d-flex justify-content-center align-items-center">
+				<li class="mr-4"><a href="mailto:libofinspiration@gmail.com">
+						<svg class="footer-brands-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.67 58.43">
+							<path
+								d="M32.34,30.71a1.46,1.46,0,0,1-1-.34L8.83,11.9a1.5,1.5,0,0,1,1.9-2.32L32.34,27.27,53.94,9.58a1.5,1.5,0,1,1,1.9,2.32L33.29,30.37A1.5,1.5,0,0,1,32.34,30.71Z" />
+							<path
+								d="M63.17,58.43H1.5A1.5,1.5,0,0,1,0,56.93V1.5A1.5,1.5,0,0,1,1.5,0H63.17a1.5,1.5,0,0,1,1.5,1.5V56.93A1.5,1.5,0,0,1,63.17,58.43ZM3,55.43H61.67V3H3Z" />
+							</svg>
+					</a></li>
+				<li class="mr-4"><a href="https://www.instagram.com/_ruby_shark_/">
+						<svg class="footer-brands-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58.59 58.59">
+							<path
+								d="M45.59,58.59H1.5A1.5,1.5,0,0,1,0,57.09V13a1.5,1.5,0,0,1,.44-1.06L11.94.44A1.5,1.5,0,0,1,13,0H57.09a1.5,1.5,0,0,1,1.5,1.5V45.59a1.47,1.47,0,0,1-.44,1.06l-11.5,11.5A1.5,1.5,0,0,1,45.59,58.59ZM3,55.59H45L55.59,45V3h-42L3,13.62Z" />
+							<path
+								d="M29.3,43.89a14.6,14.6,0,1,1,14.6-14.6A14.62,14.62,0,0,1,29.3,43.89Zm0-26.19A11.6,11.6,0,1,0,40.9,29.29,11.61,11.61,0,0,0,29.3,17.7Z" />
+							<path
+								d="M47.19,15.22A4.86,4.86,0,1,1,52,10.37,4.86,4.86,0,0,1,47.19,15.22Zm0-6.71A1.86,1.86,0,1,0,49,10.37,1.86,1.86,0,0,0,47.19,8.51Z" />
+						</svg>
+					</a></li>
+				<li class="mr-4"><a href="https://vk.com/ruby_shark">
+						<svg class="footer-brands-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63.1 63.11">
+							<path
+								d="M31.51,63.1H7.73A7.48,7.48,0,0,1,.1,56.86,9.19,9.19,0,0,1,0,55.28V7.87A7.46,7.46,0,0,1,7.84,0H55.25a7.46,7.46,0,0,1,7.84,7.86q0,23.7,0,47.41A7.47,7.47,0,0,1,57,63a10.85,10.85,0,0,1-1.89.12ZM31.54,3H7.91C4.82,3,3,4.81,3,7.89Q3,31.56,3,55.23a6.35,6.35,0,0,0,.17,1.57c.57,2.16,2.3,3.32,4.9,3.32H55a7.16,7.16,0,0,0,1.73-.17c2.16-.55,3.35-2.3,3.35-4.87q0-23.52,0-47a6.62,6.62,0,0,0-.18-1.72A4.43,4.43,0,0,0,55.25,3Z" />
+							<path
+								d="M36.8,39.38a14.18,14.18,0,0,0-.31,1.52c-.2,1.92-.93,2.67-2.86,2.65a55.69,55.69,0,0,1-6.72-.27c-3.58-.47-6.19-2.63-8.4-5.36A79.85,79.85,0,0,1,9.3,23a2.26,2.26,0,0,1,2.09-3.44c2.17-.06,4.34-.07,6.51,0a3.21,3.21,0,0,1,2.81,1.87c1.3,2.33,2.67,4.62,4,6.92a8.07,8.07,0,0,0,.7.91,16,16,0,0,0-.09-5.71,1.46,1.46,0,0,0-.87-.77c-1.6-.53-2.05-1.87-.85-3.06a5.3,5.3,0,0,1,2.29-1.35,16.34,16.34,0,0,1,7.49,0A3.26,3.26,0,0,1,36.22,22c0,2-.07,4-.12,6.06V29.5a8.22,8.22,0,0,0,1.08-1.17c1.27-2.11,2.63-4.19,3.72-6.39a3.71,3.71,0,0,1,3.79-2.38c2,.06,3.94,0,5.91,0a10.57,10.57,0,0,1,1.13,0A2.36,2.36,0,0,1,54,22.78a11.35,11.35,0,0,1-1.45,2.89c-1.58,2.31-3.23,4.57-4.9,6.82-.43.58-.33.93.14,1.4,1.55,1.55,3.09,3.12,4.58,4.73a9,9,0,0,1,1.23,1.81c1.21,2.19.14,4.4-2.35,4.57A57.34,57.34,0,0,1,44,45a6.2,6.2,0,0,1-4-2.25c-.8-.84-1.56-1.72-2.35-2.57C37.46,39.94,37.2,39.74,36.8,39.38ZM50.88,22.62a6.63,6.63,0,0,0-.71-.08c-1.84,0-3.69.05-5.53,0a.94.94,0,0,0-1,.62c-1.16,2.12-2.29,4.27-3.6,6.29a11.21,11.21,0,0,1-2.65,2.76c-1.68,1.25-3.51.54-4.05-1.49a10.63,10.63,0,0,1-.27-2.7c0-2,.07-3.94.13-5.91a.76.76,0,0,0-.69-.89,12.76,12.76,0,0,0-4.77.05,7.53,7.53,0,0,1,.55,1.48,20.17,20.17,0,0,1-.11,8,2.47,2.47,0,0,1-4.11,1.42,6.43,6.43,0,0,1-1.45-1.54,52.68,52.68,0,0,1-3.61-6c-.8-1.72-1.82-2.37-3.64-2.1a23,23,0,0,1-3,0c1.09,2,2,3.81,3.09,5.59a51.1,51.1,0,0,0,6.71,9.41,8.83,8.83,0,0,0,6.76,3c1.22,0,2.43,0,3.64,0,.75,0,1-.15,1.1-1a3.4,3.4,0,0,1,2.25-3,3,3,0,0,1,3.26.8c.42.37.79.78,1.17,1.18.75.79,1.46,1.61,2.23,2.38a3.13,3.13,0,0,0,2.27,1H50c.31,0,.62,0,1.06-.08a8.91,8.91,0,0,0-.63-1c-.89-1-1.79-2-2.72-3s-1.73-1.64-2.51-2.52a3.31,3.31,0,0,1-.5-4,15.88,15.88,0,0,1,1.24-1.9c1.22-1.64,2.48-3.25,3.69-4.9C50,24,50.41,23.36,50.88,22.62Z" />
+						</svg>
+					</a></li>
+			</ul>
 		</div>
 	</footer>
 	<script src="js/libs.js"></script>
 	<script src="js/main.js"></script>
+
 </body>
 </html>
